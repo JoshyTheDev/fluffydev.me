@@ -9,6 +9,10 @@
   --shadow: 0 6px 16px rgba(11,18,32,0.06);
 }
 
+body {
+  margin: 0;
+}
+
 .theme-dark{
   --page-bg: #432818;
   --bg: #0f1724;
