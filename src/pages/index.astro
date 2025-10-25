@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
+
+const profile = {
+  avatar: "/avatar.png",
+  name: "Rusty The Panda",
+  bio: "Programmer & Photographer",
+};
+---
+
+<Base title="fluffydev" theme="light">
+  <Header avatar={profile.avatar} name={profile.name} bio={profile.bio} />
+  <Card
+    link={{ 
+      title: "GitHub", 
+      url: "https://github.com/JoshyTheDev", 
+      icon: "" 
+    }}
+  />
+  <Card
+    link={{
+      title: "Instagram",
+      url: "https://instagram.com/rustypanda",
+      icon: "",
+    }}
+  />
+</Base>

@@ -1,0 +1,10 @@
+---
+const { avatar = '', name = '', bio = '' } = Astro.props;
+---
+<header class="header" aria-label={name ? `${name} profile` : 'profile'}>
+  {avatar ? <img class="header__avatar" src={avatar} alt={name ? `${name} avatar` : 'avatar'} loading="lazy" /> : null}
+  <div class="header__meta">
+    {name ? <div class="header__name">{name}</div> : null}
+    {bio ? <div class="header__bio">{bio}</div> : null}
+  </div>
+</header>

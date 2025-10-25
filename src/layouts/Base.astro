@@ -1,0 +1,22 @@
+---
+import '../styles/Theme.css';
+import '../styles/Fonts.css';
+import '../styles/Header.css';
+import '../styles/Card.css';
+import '../styles/Container.css';
+import Container from '../components/Container.astro';
+const { title = 'fluffydev', theme = 'light' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Container theme={theme}>
+      <slot />
+    </Container>
+  </body>
+</html>

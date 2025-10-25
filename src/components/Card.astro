@@ -1,0 +1,25 @@
+---
+const { link, url, title, icon, target } = Astro.props;
+
+const final = link ?? { url, title, icon, target };
+const {
+  url: href = '#',
+  title: label = '',
+  icon: iconEl = null,
+  target: tgt = '_blank',
+} = final ?? {};
+
+const rel = tgt === '_blank' ? 'noopener noreferrer' : undefined;
+---
+<section class="card" aria-label="link">
+  <a
+    class="card__link"
+    href={href}
+    target={tgt}
+    rel={rel}
+    aria-label={label}
+  >
+    {iconEl ? <span class="card__icon">{iconEl}</span> : null}
+    <span class="card__title">{label}</span>
+  </a>
+</section>

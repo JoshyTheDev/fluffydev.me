@@ -1,0 +1,21 @@
+:root{
+  --page-bg: #99582a;
+  --bg: #432818;
+  --card-bg: var(--bg);
+  --text: #ffe6a7;
+  --muted: #bb9457;
+  --accent: #2563eb;
+  --link-bg: #432818;
+  --shadow: 0 6px 16px rgba(11,18,32,0.06);
+}
+
+.theme-dark{
+  --page-bg: #432818;
+  --bg: #0f1724;
+  --card-bg: #0f1724;
+  --text: #e6eef8;
+  --muted: #9aa7bd;
+  --accent: #60a5fa;
+  --link-bg: rgba(255,255,255,0.03);
+  --shadow: 0 6px 16px rgba(2,6,23,0.6);
+}

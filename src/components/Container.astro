@@ -1,0 +1,8 @@
+---
+const { class: className = '', theme = 'light' } = Astro.props;
+---
+<div class={`container theme-${theme} ${className}`}>
+  <div class="container__inner">
+    <slot />
+  </div>
+</div>
